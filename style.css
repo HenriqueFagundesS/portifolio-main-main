@@ -548,46 +548,45 @@ header {
 /* Media Queries */
 @media (max-width: 768px) {
     header {
-        flex-direction: column;
-        padding: 10px;
-        height: max-content;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: 70px;
+        padding: 8px 15px;
+        position: relative;
     }
 
     .link_texto {
-        margin: 15px;
+        font-size: 22px;
+        margin: 0;
     }
 
     .areas {
-        flex-direction: column;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
         align-items: center;
         gap: 8px;
-        padding: 6px 0;
-    }
-
-    header {
-        height: auto;
-        padding: 10px 8px;
-    }
-
-    .link_texto {
-        font-size: 26px;
-        margin: 8px 0;
+        padding: 0;
+        max-height: 40px;
+        overflow: hidden;
     }
 
     .areas_area {
-        font-size: 16px;
+        font-size: 14px;
     }
 
     .areas_area_link {
-        padding: 6px 12px;
-        border-radius: 18px;
+        padding: 6px 10px;
+        border-radius: 16px;
     }
 
     .home {
         flex-direction: column-reverse;
         gap: 20px;
         text-align: center;
-        padding: 40px 20px;
+        padding: 30px 16px;
     }
 
     .home_informacao {
